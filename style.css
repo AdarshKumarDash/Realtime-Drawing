@@ -1,0 +1,48 @@
+.note, .note:hover {
+    font-size: 16px;
+    color: crimson;
+}
+
+body {
+    background-color: rgb(142, 249, 249);
+}
+
+.heading {
+    margin: 0px;
+    width: 100%;
+    box-shadow: 0 0 5px 5px grey;
+    font-size: 25px;
+}
+
+.square_size {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    font-size: 26px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+    bottom: 0;
+}
+
+canvas, video {
+    border: 1.5px solid black;
+    box-shadow: 0 0 5px 5px grey;
+}
+
+.line {
+    height: 530px;
+    width: 2px;
+    border-color: rgb(255, 60, 0);
+    border-style: dashed;
+    left: 50%;
+    position: absolute;
+}
