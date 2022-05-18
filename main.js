@@ -2,6 +2,7 @@ nosey = "";
 nosex = "";
 leftwrisx = "";
 rightwrisx = "";
+difference = "";
 
 function setup() {
     canvas = createCanvas(500, 400);
@@ -21,6 +22,7 @@ function getposes(result) {
         leftwrisx = result[0].pose.leftWrist.x;
         rightwrisx = result[0].pose.rightWrist.x;
         console.log(nosex, nosey, leftwrisx, rightwrisx);
+        difference = floor(leftwrisx - rightwrisx);
     }
 }
 
@@ -29,5 +31,12 @@ function modelloaded() {
 }
 
 function draw() {
+    r = random(255);
+    g = random(255);
+    b = random(255);
     background("white");
+    fill(r, g, b);
+    stroke("black");
+    square(nosex, nosey, difference);
+    document.getElementById("square_size").innerHTML = difference + "px";
 }
